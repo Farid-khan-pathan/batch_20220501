@@ -1,0 +1,35 @@
+
+version: 2
+
+models:
+  - name: dept
+    description: "A starter dbt model"
+    columns:
+      - name: dno
+        description: "The primary key for this table"
+        tests:
+      - name: dname
+        tests:
+          - not_null
+          - unique
+      - name: loc
+
+  - name: emp
+  
+    columns:
+      - name: empno
+        tests:
+      - name: ename
+      - name: doj
+      - name: dno
+      - name: salary
+
+  - name: emp_details
+    columns:
+      - name: dno
+        tests:
+      - name: dname
+      - name: ename
+      - name: salary
+      - name: doj
+
