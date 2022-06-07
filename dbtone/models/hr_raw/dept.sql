@@ -1,7 +1,7 @@
 
 {{
     config(materialized='table',
-    alias = "dept")
+    alias = "depts")
 }}
 
 select *
